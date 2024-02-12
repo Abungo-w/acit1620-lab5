@@ -44,3 +44,48 @@
         On screens wider than 800px, the <p> element inside the div must additionally have no top margin
 
 */
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.bg-pink {
+    display: grid;
+    grid-template-columns: auto;
+    height: max-content;
+}
+
+.bg-pink > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2em;
+}
+
+#flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+#canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flexbox > h2 {
+    font-size: 6em;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 5;
+}
